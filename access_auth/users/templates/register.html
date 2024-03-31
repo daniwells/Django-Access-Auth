@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="{% url 'register' %}" method="POST">{% csrf_token %}
+        <input type="text" placeholder="Username" name="username">
+        <br>
+        <br>
+        <input type="email" placeholder="Email" name="email">
+        <br>
+        <br>
+        <input type="password" placeholder="Password" name="password">
+        <br>
+        <br>
+        <input type="submit"  value="submit">
+        <br>
+    </form>
+</body>
+</html>
+
+<h1>Register</h1>
